@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Livros</h1>
+
+    <form id="add-task-form" method="POST" action="/adicionar-livro">
+        <label for="task">Novo Livro:</label>
+        <input type="text" id="task" name="nomeLivro" required>
+        <button type="submit">Adicionar Livro</button>
+    </form>
+
+    <br>
+
+    <form id="apagar-livro" method="POST" action="/apagar-livro">
+        <label for="task">ID Livro:</label>
+        <input type="text" id="task" name="livroId" required>
+        <button type="submit">Apagar Livro</button>
+    </form>
+
+    <br>
+
+    <form method="POST" action="/atualizar-livro">
+        <label for="idLivro">ID do Livro para Atualizar:</label>
+        <input type="text" id="idLivro" name="idLivro" required>
+        <br>
+      
+        <label for="novoNomeLivro">Novo Nome do Livro:</label>
+        <input type="text" id="novoNomeLivro" name="novoNomeLivro" required>
+        <br>
+      
+        <button type="submit">Atualizar Livro</button>
+      </form>
+      
+    <br>
+    
+    <form id="apagar-todos" method="POST" action="/truncar-tabela">
+        <button type="submit" name="apagarTodos">Apagar Todos</button>
+    </form>
+    
+    <br>
+
+    <form id="mostrar-livros" method="POST" action="/mostrar-livros">
+        <button type="submit" id="mostrarLivros" name="mostrarLivros">Visualizar Livros</button>
+    </form>
+
+    <script src="/app.js"></script>
+    <script src="/public/crud.js"></script>
+    <script src="/public/teste.js"></script>
+
+</body>
+</html>

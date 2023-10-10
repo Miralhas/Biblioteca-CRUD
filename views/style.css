@@ -1,0 +1,58 @@
+@keyframes glowing-border {
+    0% {
+        border-color: #007bff; /* Azul */
+    }
+    25% {
+        border-color: #00cc66; /* Verde */
+    }
+    50% {
+        border-color: #9933ff; /* Roxo */
+    }
+    75% {
+        border-color: #007bff; /* Azul */
+    }
+    100% {
+        border-color: #007bff; /* Azul */
+    }
+}
+
+body {
+    background: #212529;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.col{
+    margin: 2% 0;
+}
+
+h4{
+    color: white;
+}
+
+p, h1{
+    color: white;
+    font-weight: bold;
+}
+
+h1{
+    text-align: center;
+}
+
+#container-meio{
+    background: #2c3136;
+    border: 2px solid transparent;
+    padding: 20px;
+    animation: glowing-border 14s infinite;
+}
+
+#p-livros{
+    text-align: center;
+}
+
+#label{
+    color: white;
+    font-weight: bold;
+}
